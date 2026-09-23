@@ -1,0 +1,18 @@
+=== SYSTEM ===
+Linux ananth-dev 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+=== PYTHON ===
+Python 3.12.3
+
+=== IVERILOG ===
+Icarus Verilog version 12.0 (stable) ()
+
+Copyright (c) 2000-2021 Stephen Williams (steve@icarus.com)
+
+  This program is free software; you can redistribute it and/or modify
+
+=== RISC-V GCC ===
+riscv64-unknown-elf-gcc (13.2.0-11ubuntu1+12) 13.2.0
+
+=== GIT ===
+git version 2.43.0

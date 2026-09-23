@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Simulation/build outputs
+*.elf
+*.bin
+*.hex
+*.vcd
+*.fst
+
+# Icarus/Verilator generated executables
+sim_*
+obj_dir/
+
+# Vivado generated directories
+.Xil/
+*.cache/
+*.runs/
+*.sim/
+*.gen/
+ip_user_files/
+
+# Editor/OS noise
+.vscode/
+.DS_Store
+Thumbs.db
