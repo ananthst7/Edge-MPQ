@@ -1,0 +1,164 @@
+
+build/gemm_full.o:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <gemm4x4_i8>:
+   0:	fb010113          	addi	sp,sp,-80
+   4:	04812623          	sw	s0,76(sp)
+   8:	04912423          	sw	s1,72(sp)
+   c:	05212223          	sw	s2,68(sp)
+  10:	05312023          	sw	s3,64(sp)
+  14:	03412e23          	sw	s4,60(sp)
+  18:	03512c23          	sw	s5,56(sp)
+  1c:	03612a23          	sw	s6,52(sp)
+  20:	03712823          	sw	s7,48(sp)
+  24:	03812623          	sw	s8,44(sp)
+  28:	03912423          	sw	s9,40(sp)
+  2c:	03b12023          	sw	s11,32(sp)
+  30:	05010413          	addi	s0,sp,80
+  34:	00060713          	addi	a4,a2,0
+  38:	1ed05063          	bge	zero,a3,218 <.L4>
+  3c:	00169f93          	slli	t6,a3,0x1
+  40:	00d507b3          	add	a5,a0,a3
+  44:	00000293          	addi	t0,zero,0
+  48:	00000393          	addi	t2,zero,0
+  4c:	00000613          	addi	a2,zero,0
+  50:	03a12223          	sw	s10,36(sp)
+  54:	01f50fb3          	add	t6,a0,t6
+  58:	faf42c23          	sw	a5,-72(s0)
+  5c:	00000493          	addi	s1,zero,0
+  60:	00000913          	addi	s2,zero,0
+  64:	00000993          	addi	s3,zero,0
+  68:	00000a13          	addi	s4,zero,0
+  6c:	00000a93          	addi	s5,zero,0
+  70:	00000b13          	addi	s6,zero,0
+  74:	00000b93          	addi	s7,zero,0
+  78:	00000c13          	addi	s8,zero,0
+  7c:	00000c93          	addi	s9,zero,0
+  80:	00000d93          	addi	s11,zero,0
+  84:	fc042223          	sw	zero,-60(s0)
+  88:	fc042423          	sw	zero,-56(s0)
+  8c:	fc042623          	sw	zero,-52(s0)
+  90:	00060d13          	addi	s10,a2,0
+  94:	fc742023          	sw	t2,-64(s0)
+  98:	fa542e23          	sw	t0,-68(s0)
+  9c:	fae42a23          	sw	a4,-76(s0)
+
+000000a0 <.L3>:
+  a0:	00050e03          	lb	t3,0(a0)
+  a4:	00058803          	lb	a6,0(a1)
+  a8:	00158603          	lb	a2,1(a1)
+  ac:	fcc42283          	lw	t0,-52(s0)
+  b0:	030e0f33          	mul	t5,t3,a6
+  b4:	00258703          	lb	a4,2(a1)
+  b8:	00358e83          	lb	t4,3(a1)
+  bc:	fc842383          	lw	t2,-56(s0)
+  c0:	00d50333          	add	t1,a0,a3
+  c4:	00030303          	lb	t1,0(t1)
+  c8:	000f8883          	lb	a7,0(t6)
+  cc:	00df87b3          	add	a5,t6,a3
+  d0:	00078783          	lb	a5,0(a5)
+  d4:	00150513          	addi	a0,a0,1
+  d8:	01e28f33          	add	t5,t0,t5
+  dc:	02ce02b3          	mul	t0,t3,a2
+  e0:	fde42623          	sw	t5,-52(s0)
+  e4:	001f8f93          	addi	t6,t6,1
+  e8:	00458593          	addi	a1,a1,4
+  ec:	02ee0f33          	mul	t5,t3,a4
+  f0:	005382b3          	add	t0,t2,t0
+  f4:	fc542423          	sw	t0,-56(s0)
+  f8:	fc442283          	lw	t0,-60(s0)
+  fc:	03de0e33          	mul	t3,t3,t4
+ 100:	01e28f33          	add	t5,t0,t5
+ 104:	fde42223          	sw	t5,-60(s0)
+ 108:	03030f33          	mul	t5,t1,a6
+ 10c:	01cd0d33          	add	s10,s10,t3
+ 110:	02c30e33          	mul	t3,t1,a2
+ 114:	01ed8db3          	add	s11,s11,t5
+ 118:	02e30f33          	mul	t5,t1,a4
+ 11c:	01cc8cb3          	add	s9,s9,t3
+ 120:	03d30333          	mul	t1,t1,t4
+ 124:	01ec0c33          	add	s8,s8,t5
+ 128:	03088e33          	mul	t3,a7,a6
+ 12c:	006b8bb3          	add	s7,s7,t1
+ 130:	02c88333          	mul	t1,a7,a2
+ 134:	01cb0b33          	add	s6,s6,t3
+ 138:	02c78633          	mul	a2,a5,a2
+ 13c:	006a8ab3          	add	s5,s5,t1
+ 140:	02e88e33          	mul	t3,a7,a4
+ 144:	00c484b3          	add	s1,s1,a2
+ 148:	fc042603          	lw	a2,-64(s0)
+ 14c:	02e78733          	mul	a4,a5,a4
+ 150:	01ca0a33          	add	s4,s4,t3
+ 154:	03078833          	mul	a6,a5,a6
+ 158:	00e60733          	add	a4,a2,a4
+ 15c:	fce42023          	sw	a4,-64(s0)
+ 160:	fbc42703          	lw	a4,-68(s0)
+ 164:	03d787b3          	mul	a5,a5,t4
+ 168:	01090933          	add	s2,s2,a6
+ 16c:	03d888b3          	mul	a7,a7,t4
+ 170:	00f707b3          	add	a5,a4,a5
+ 174:	faf42e23          	sw	a5,-68(s0)
+ 178:	fb842783          	lw	a5,-72(s0)
+ 17c:	011989b3          	add	s3,s3,a7
+ 180:	f2a790e3          	bne	a5,a0,a0 <.L3>
+ 184:	000d0613          	addi	a2,s10,0
+ 188:	fc042383          	lw	t2,-64(s0)
+ 18c:	fbc42283          	lw	t0,-68(s0)
+ 190:	fb442703          	lw	a4,-76(s0)
+ 194:	02412d03          	lw	s10,36(sp)
+
+00000198 <.L2>:
+ 198:	fcc42783          	lw	a5,-52(s0)
+ 19c:	01b72823          	sw	s11,16(a4)
+ 1a0:	01972a23          	sw	s9,20(a4)
+ 1a4:	00f72023          	sw	a5,0(a4)
+ 1a8:	fc842783          	lw	a5,-56(s0)
+ 1ac:	01872c23          	sw	s8,24(a4)
+ 1b0:	01772e23          	sw	s7,28(a4)
+ 1b4:	00f72223          	sw	a5,4(a4)
+ 1b8:	fc442783          	lw	a5,-60(s0)
+ 1bc:	04c12403          	lw	s0,76(sp)
+ 1c0:	03672023          	sw	s6,32(a4)
+ 1c4:	03572223          	sw	s5,36(a4)
+ 1c8:	03472423          	sw	s4,40(a4)
+ 1cc:	03372623          	sw	s3,44(a4)
+ 1d0:	03272823          	sw	s2,48(a4)
+ 1d4:	02972a23          	sw	s1,52(a4)
+ 1d8:	00f72423          	sw	a5,8(a4)
+ 1dc:	00c72623          	sw	a2,12(a4)
+ 1e0:	02772c23          	sw	t2,56(a4)
+ 1e4:	02572e23          	sw	t0,60(a4)
+ 1e8:	04812483          	lw	s1,72(sp)
+ 1ec:	04412903          	lw	s2,68(sp)
+ 1f0:	04012983          	lw	s3,64(sp)
+ 1f4:	03c12a03          	lw	s4,60(sp)
+ 1f8:	03812a83          	lw	s5,56(sp)
+ 1fc:	03412b03          	lw	s6,52(sp)
+ 200:	03012b83          	lw	s7,48(sp)
+ 204:	02c12c03          	lw	s8,44(sp)
+ 208:	02812c83          	lw	s9,40(sp)
+ 20c:	02012d83          	lw	s11,32(sp)
+ 210:	05010113          	addi	sp,sp,80
+ 214:	00008067          	jalr	zero,0(ra)
+
+00000218 <.L4>:
+ 218:	00000293          	addi	t0,zero,0
+ 21c:	00000393          	addi	t2,zero,0
+ 220:	00000493          	addi	s1,zero,0
+ 224:	00000913          	addi	s2,zero,0
+ 228:	00000993          	addi	s3,zero,0
+ 22c:	00000a13          	addi	s4,zero,0
+ 230:	00000a93          	addi	s5,zero,0
+ 234:	00000b13          	addi	s6,zero,0
+ 238:	00000b93          	addi	s7,zero,0
+ 23c:	00000c13          	addi	s8,zero,0
+ 240:	00000c93          	addi	s9,zero,0
+ 244:	00000d93          	addi	s11,zero,0
+ 248:	00000613          	addi	a2,zero,0
+ 24c:	fc042223          	sw	zero,-60(s0)
+ 250:	fc042423          	sw	zero,-56(s0)
+ 254:	fc042623          	sw	zero,-52(s0)
+ 258:	f41ff06f          	jal	zero,198 <.L2>

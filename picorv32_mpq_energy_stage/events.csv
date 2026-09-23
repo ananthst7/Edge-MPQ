@@ -1,0 +1,2 @@
+total_cycles,instruction_fetches,dmem_reads,dmem_writes,custom_int2,custom_int4,custom_int8,arch_rf_reads,arch_rf_writes,packing_ops
+41,11,0,3,1,1,1,14,7,0

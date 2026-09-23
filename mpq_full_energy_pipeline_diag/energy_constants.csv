@@ -1,0 +1,9 @@
+parameter,value_pJ,source_or_note
+int2_dot,,"Populate from synthesized/activity-based MPQ unit result"
+int4_dot,,"Populate from synthesized/activity-based MPQ unit result"
+int8_dot,,"Populate from synthesized/activity-based MPQ unit result"
+rf_read,,"Energy per architectural RF read"
+rf_write,,"Energy per architectural RF write"
+dmem_read,,"Energy per data-memory read"
+dmem_write,,"Energy per data-memory write"
+packing_alu_op,,"Energy per integer ALU operation used for packing"

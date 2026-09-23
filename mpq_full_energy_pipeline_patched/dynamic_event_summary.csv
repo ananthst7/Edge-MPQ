@@ -1,0 +1,4 @@
+pressure_level,total_cycles,rf_reads,rf_writes,dmem_reads,dmem_writes,packing_alu_ops,packing_loads,packing_stores,all_stack_loads,all_stack_stores,gemm_stack_loads,gemm_stack_stores,gemm_marker_starts,gemm_marker_ends,custom_int2,custom_int4,custom_int8
+full,1807,521,331,38,32,225,38,22,22,32          0          0          0          0,,,,,0,0,0
+p2,1807,521,331,38,32,225,38,22,22,32          0          0          0          0,,,,,0,0,0
+p4,1807,521,331,38,32,225,38,22,22,32          0          0          0          0,,,,,0,0,0

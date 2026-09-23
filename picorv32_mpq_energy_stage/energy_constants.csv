@@ -1,0 +1,9 @@
+parameter,value_pJ,source_or_note
+int2_dot,,"Populate from synthesis/activity measurement or cited source"
+int4_dot,,"Populate from synthesis/activity measurement or cited source"
+int8_dot,,"Populate from synthesis/activity measurement or cited source"
+rf_read,,"Energy per architectural RF read"
+rf_write,,"Energy per architectural RF write"
+dmem_read,,"Energy per data-memory read"
+dmem_write,,"Energy per data-memory write"
+packing_op,,"Energy per explicit pack/unpack operation"

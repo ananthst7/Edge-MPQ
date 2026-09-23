@@ -1,0 +1,2 @@
+total_cycles,instruction_fetches,dmem_reads,dmem_writes,custom_int2,custom_int4,custom_int8,rf_reads,rf_writes,packing_alu_ops,packing_loads,packing_stores,all_stack_loads,all_stack_stores,gemm_stack_loads,gemm_stack_stores,gemm_marker_starts,gemm_marker_ends
+1807,429,38,32,0,0,0,521,331,225,38,22,22,32,0,0,0,0
