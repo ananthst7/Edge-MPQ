@@ -26,3 +26,6 @@ ip_user_files/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# DNN datasets
+dnn/data/

@@ -1,0 +1,5 @@
+FP32 ResNet-8 MNIST baseline
+Best epoch: 10
+Best test accuracy: 99.380%
+Seed: 42
+Device: cuda
